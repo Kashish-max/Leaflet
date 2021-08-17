@@ -1,0 +1,20 @@
+@font-face {
+  font-family: ThemeFont;
+  src: url(./components/assets/Product-Sans-Regular.ttf);
+}
+
+@font-face {
+  font-family: ThemeFontBold;
+  src: url(./components/assets/Product-Sans-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: ThemeFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: ThemeFont;
+}
