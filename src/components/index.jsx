@@ -17,7 +17,7 @@ class Index extends Component {
         }
     }
 
-    Opportunities = ["Compititions", "Quizzes", "Hackathons", "Scholarships", "Internships", "Jobs", "Workshops", "Conferences", "Festivals", "Courses"]
+    Opportunities = ["Compititions", "Quizzes", "Hackathons", "Internships", "Workshops", "Webinars", "Events", "Courses"]
 
     handleClick = () => {
         this.setState({ click: !this.state.click });
@@ -54,7 +54,7 @@ class Index extends Component {
                                         <a href="/" className="nav-links" onClick={this.state.click ? this.handleClick : null}> Home </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="/about" className="nav-links" onClick={this.state.click ? this.handleClick : null}> Events </a>
+                                        <a href="mailto:kashish24102001@gmail.com" className="nav-links" onClick={this.state.click ? this.handleClick : null}>Contact Us </a>
                                     </li>
                                 </ul>
                             </div>
