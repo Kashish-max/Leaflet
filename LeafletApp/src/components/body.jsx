@@ -2,7 +2,7 @@ import { React, Component } from 'react';
 import './body.scss'
 import { FilterData } from './jsonData/filters';
 import { eventData } from './jsonData/eventData';
-
+import Demo from './socialShare';
 
 class Body extends Component {
     constructor(props) {
@@ -134,6 +134,7 @@ class Body extends Component {
                                                     <div className="card-lower-half">
                                                         <h4>{item.title}</h4>
                                                         <span>{item.provider.slice(0, item.provider.search(','))}</span>
+                                                        <Demo eventUrl={item.site} eventTitle={item.title} />
                                                     </div>
                                                 </a>
                                             </div>

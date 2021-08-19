@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import './index.scss'
+import Demo from './socialShare';
 
 import Body from './body'
 
@@ -17,7 +18,7 @@ class Index extends Component {
         }
     }
 
-    Opportunities = ["Compititions", "Quizzes", "Hackathons", "Internships", "Workshops", "Webinars", "Events", "Courses"]
+    Opportunities = ["Competitions", "Quizzes", "Hackathons", "Internships", "Workshops", "Webinars", "Events", "Courses"]
 
     handleClick = () => {
         this.setState({ click: !this.state.click });
@@ -72,6 +73,7 @@ class Index extends Component {
                 </div>
                 <switch>
                     <Route exact path="/"><Body Opportunities={this.Opportunities} /></Route>
+                    <Route exact path="/home"><Demo /></Route>
                 </switch>
             </Router>
         );

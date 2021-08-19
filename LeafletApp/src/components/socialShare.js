@@ -54,9 +54,18 @@ import {
 import './social.css';
 
 class Demo extends Component {
+  constructor(props) {
+      super(props);
+      this.state = { }
+  }
+
+  componentDidMount() {
+    console.log(this.props)
+  }
+
   render() {
-    const shareUrl = 'http://github.com';
-    const title = 'GitHub';
+    const shareUrl = this.props.eventUrl;
+    const title = this.props.eventTitle;
 
     return (
       <div className="Demo__container">
@@ -64,6 +73,7 @@ class Demo extends Component {
           <FacebookShareButton
             url={shareUrl}
             quote={title}
+            separator=":: "
             className="Demo__some-network__share-button"
           >
             <FacebookIcon size={32} round />
@@ -80,6 +90,7 @@ class Demo extends Component {
           <FacebookMessengerShareButton
             url={shareUrl}
             appId="521270401588372"
+            separator=":: "
             className="Demo__some-network__share-button"
           >
             <FacebookMessengerIcon size={32} round />
@@ -90,6 +101,7 @@ class Demo extends Component {
           <TwitterShareButton
             url={shareUrl}
             title={title}
+            separator=":: "
             className="Demo__some-network__share-button"
           >
             <TwitterIcon size={32} round />
@@ -102,6 +114,7 @@ class Demo extends Component {
           <TelegramShareButton
             url={shareUrl}
             title={title}
+            separator=":: "
             className="Demo__some-network__share-button"
           >
             <TelegramIcon size={32} round />
@@ -112,8 +125,8 @@ class Demo extends Component {
 
         <div className="Demo__some-network">
           <WhatsappShareButton
-            url={"www.google.com"}
-            title={"hello"}
+            url={shareUrl}
+            title={title}
             separator=":: "
             className="Demo__some-network__share-button"
           >
@@ -142,6 +155,7 @@ class Demo extends Component {
           <RedditShareButton
             url={shareUrl}
             title={title}
+            separator=":: "
             windowWidth={660}
             windowHeight={460}
             className="Demo__some-network__share-button"

@@ -2,7 +2,7 @@ export const eventData = [
    {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Free,All",
         prize: 0,
         start_date: "12 Oct 2021",
@@ -17,7 +17,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Paid,All",
         prize: 1500,
         start_date: "12 Oct 2020",
@@ -32,7 +32,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Paid,All",
         prize: 1100,
         start_date: "12 Dec 2021",
@@ -47,7 +47,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Free,All",
         prize: 0,
         start_date: "23 Oct 2021",
@@ -62,7 +62,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Paid,All",
         prize: 1800,
         start_date: "10 Dec 2021",
@@ -77,7 +77,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 2000,
         start_date: "12 Oct 2021",
@@ -92,7 +92,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Paid,All",
         prize: 1500,
         start_date: "12 Oct 2021",
@@ -107,7 +107,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 1300,
         start_date: "12 Oct 2021",
@@ -122,7 +122,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 1000,
         start_date: "12 Oct 2022",
@@ -137,7 +137,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 1000,
         start_date: "12 Jan 2021",
@@ -152,7 +152,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 1650,
         start_date: "12 Oct 2021",
@@ -167,7 +167,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 1900,
         start_date: "12 Oct 2021",
@@ -182,7 +182,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 1000,
         start_date: "12 Oct 2021",
@@ -197,7 +197,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 1000,
         start_date: "12 Oct 2021",
@@ -212,7 +212,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 1000,
         start_date: "12 Oct 2021",
@@ -227,7 +227,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 1000,
         start_date: "12 Oct 2021",
@@ -242,7 +242,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Free,All",
         prize: 0,
         start_date: "22 Oct 2020",
@@ -257,7 +257,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "paid,All",
         prize: 2000,
         start_date: "04 Oct 2021",
@@ -272,7 +272,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Free,All",
         prize: 0,
         start_date: "12 Dec 2021",
@@ -287,7 +287,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Free,All",
         prize: 0,
         start_date: "12 Oct 2021",
@@ -302,7 +302,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Free,All",
         prize: 0,
         start_date: "23 Oct 2021",
@@ -317,7 +317,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Free,All",
         prize: 0,
         start_date: "23 Oct 2020",
@@ -332,7 +332,7 @@ export const eventData = [
     {
         image: "/images/sample1.jpg",
         title: "Interpersonal Skills Quiz",
-        site: "",
+        site: "www.google.com",
         payment: "Free,All",
         prize: 0,
         start_date: "05 Nov 2021",
