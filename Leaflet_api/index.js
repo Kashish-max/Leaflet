@@ -13,10 +13,9 @@ const mongooseconfig = require('./mongooseconfig.js');
 
 
 
-app.post('/abc', (req, res) => {
+app.post('/route1', (req, res) => {
 
     eventModel.createEvent(req.body).then((result)=>{
-        console.log("easy");
         res.status(201).send({status:"Event Sucessfully Saved"});
     })
 
@@ -28,3 +27,12 @@ const Port = process.env.PORT || 3001;
 app.listen(Port, () => {
     console.log("Listening on Port:",Port)
 })
+
+app.post('/route2', (req, res) => {
+
+    eventModel.getEventbyType(req.body).then((result)=>{
+        res.status(200).send({eventData:result});
+    })
+
+
+});

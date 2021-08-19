@@ -17,7 +17,7 @@ class Index extends Component {
         }
     }
 
-    Opportunities = ["Compititions", "Quizzes", "Hackathons", "Internships", "Workshops", "Webinars", "Events", "Courses"]
+    Opportunities = ["Competitions", "Quizzes", "Hackathons", "Internships", "Workshops", "Webinars", "Events", "Courses"]
 
     handleClick = () => {
         this.setState({ click: !this.state.click });
