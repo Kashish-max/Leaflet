@@ -60,7 +60,7 @@ class Body extends Component {
                             <div className="header-right">
                                 <div className="header-right-text">
                                     <h1>LeafLet</h1>
-                                    <p>welcome to IT UIET, here you can find all the information regarding information teachnology branch. Learning, Engagements and Hiring while connecting students, professionals, companies, colleges, educators and learners. </p>
+                                    <p>Welcome to IT UIET, here you can find all the information regarding information teachnology branch. Learning, Engagements and Hiring while connecting students, professionals, companies, colleges, educators and learners.To facilitate this process we at Leaflet have made a one stop platform for the same.</p>
                                 </div>
                             </div>
                         </div>
