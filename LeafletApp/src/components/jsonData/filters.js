@@ -1,10 +1,10 @@
 export const FilterData = [
-    {
-        title: "Sort by",
-        class: "f-sort",
-        type: "checkbox",
-        labels: ["Prizes (High to Low)", "Days Left (Low to High)"],
-    },
+    // {
+    //     title: "Sort by",
+    //     class: "f-sort",
+    //     type: "checkbox",
+    //     labels: ["Prizes (High to Low)", "Days Left (Low to High)"],
+    // },
     {
         title: "Status",
         class: "f-status",
@@ -26,7 +26,7 @@ export const FilterData = [
     {
         title: "Provider",
         class: "f-provider",
-        type: "checkbox",
-        labels: ["Coursera", "Udemy", "Future Learn", "YouTube", "Skillshop", "Udacity"],
+        type: "radio",
+        labels: ["All", "Coursera", "Udemy", "Future Learn", "YouTube", "Skillshop", "Udacity"],
     },
 ]

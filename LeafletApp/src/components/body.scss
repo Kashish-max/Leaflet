@@ -123,14 +123,15 @@
 }
 
 .reset-filters {
-  display: flex;
+  // display: flex;
+  display: none;
   align-items: center;
   color: var(--Leaf-button);
   background: none;
   border: none;
   outline: none;
   font-size: 16px;
-  padding: 8px 12px;
+  padding: 6px 8px;
   border-radius: 3px;
   transition: background 0.2s;
 
@@ -151,6 +152,10 @@
         fill: var(--Leaf-button);
     }
   }
+}
+
+.clear-filters {
+  display: flex !important;
 }
 
 .filters-container {
