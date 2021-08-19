@@ -29,3 +29,7 @@ exports.createEvent = (eventD) => {
 }
 
 
+exports.getEventbyType = (filter) => {
+    return Event.find(filter);
+}
+
