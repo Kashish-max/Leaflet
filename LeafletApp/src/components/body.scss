@@ -237,7 +237,8 @@
   max-width: 250px;
 
   span {
-    display: block;
+    // display: block;
+    display: none;
     margin-bottom: 10px;
     color: var(--text-P);
     i {

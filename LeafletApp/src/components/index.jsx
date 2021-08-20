@@ -59,7 +59,7 @@ class Index extends Component {
                                 </ul>
                             </div>
                         </nav>
-                        <div className="sub-bar">
+                        <div className={this.state.click ? "sub-bar" : "sub-bar inactive"}>
                             <ul className="sub-bar-container">
                                 {this.Opportunities.map((item, index) => {
                                     return (
