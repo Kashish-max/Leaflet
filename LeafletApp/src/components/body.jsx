@@ -16,7 +16,7 @@ class Body extends Component {
             payment: "",
             provider: "",
             resetFilterClass: "reset-filters",
-            modalDisplay: "flex",
+            modalDisplay: "none",
             bodyOverflow: "initial",
             modalData: eventData[2],
         }
