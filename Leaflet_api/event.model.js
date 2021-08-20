@@ -14,6 +14,9 @@ const eventSchema = new Schema({
     type: String,
     provider: String,
     eligibility: String,
+    payment: String,
+    description: String,
+    posted_on: String
 });
 
 
