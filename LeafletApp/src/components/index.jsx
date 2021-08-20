@@ -6,7 +6,6 @@ import {
   Link
 } from "react-router-dom";
 import './index.scss'
-import Demo from './socialShare';
 
 import Body from './body'
 
@@ -73,7 +72,7 @@ class Index extends Component {
                 </div>
                 <switch>
                     <Route exact path="/"><Body Opportunities={this.Opportunities} /></Route>
-                    <Route exact path="/home"><Demo /></Route>
+                    {/* <Route exact path="/home"><Calendar /></Route> */}
                 </switch>
             </Router>
         );

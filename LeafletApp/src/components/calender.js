@@ -8,7 +8,7 @@ function Calendar() {
   var CLIENT_ID = "421761742577-ssqab7uk2di7hvkrkc1bi8itk43423vj.apps.googleusercontent.com"
   var API_KEY = "AIzaSyCZq_-zPRMxQj054pRl9aDfELRMdVOfNN0"
   var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"]
-  var SCOPES = "https://www.googleapis.com/auth/calendar.readonly"
+  var SCOPES = "https://www.googleapis.com/auth/calendar"
 
   const handleClick = () => {
     gapi.load('client:auth2', () => {
@@ -25,7 +25,6 @@ function Calendar() {
 
       gapi.auth2.getAuthInstance().signIn()
       .then(() => {
-        
         var event = {
           'summary': 'Awesome Event!',
           'location': '800 Howard St., San Francisco, CA 94103',
@@ -70,8 +69,9 @@ function Calendar() {
 
 
   return (
-    <div className="App">
-        <button style={{width: 100, height: 50}} onClick={handleClick}>Add Event</button>
+    <div className="calender-btn">
+      {/* <button style={{width: 100, height: 50}} onClick={handleClick}>Add Event</button> */}
+      <i class="fa fa-calendar" aria-hidden="true" onClick={handleClick}></i>
     </div>
   );
 }
