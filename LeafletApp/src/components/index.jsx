@@ -31,7 +31,7 @@ class Index extends Component {
         return (
             <Router>
                 <div className="navbar-container">
-                    <div className={this.state.click ? "main-container" : ""} onClick={()=>this.Close()}>
+                    <div className={this.state.click ? "main-container" : ""}>
                         <nav className="navbar" onClick={(e)=>e.stopPropagation()}>
                             <div className="nav-container">
                                 <div className="nav-left">
@@ -51,10 +51,10 @@ class Index extends Component {
                                 </div>
                                 <ul className={this.state.click ? "nav-menu active" : "nav-menu"}>
                                     <li className="nav-item">
-                                        <a href="/" className="nav-links" onClick={this.state.click ? this.handleClick : null}> Home </a>
+                                        <a href="/" className="nav-links"> Home </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="mailto:kashish24102001@gmail.com" className="nav-links" onClick={this.state.click ? this.handleClick : null}>Contact Us </a>
+                                        <a href="mailto:kashish24102001@gmail.com" className="nav-links">Contact Us </a>
                                     </li>
                                 </ul>
                             </div>
@@ -63,7 +63,7 @@ class Index extends Component {
                             <ul className="sub-bar-container">
                                 {this.Opportunities.map((item, index) => {
                                     return (
-                                        <li>{item}</li>
+                                        <a href={"/" + item}><li>{item}</li></a>
                                     )
                                 })}
                             </ul>
@@ -71,8 +71,16 @@ class Index extends Component {
                     </div>
                 </div>
                 <switch>
-                    <Route exact path="/"><Body Opportunities={this.Opportunities} /></Route>
-                    {/* <Route exact path="/home"><Calendar /></Route> */}
+                    <Route exact path="/">
+                        <Body Opportunities={this.Opportunities} activePage="Courses" />
+                    </Route>
+                    {this.Opportunities.map((item) => {
+                        return (
+                            <Route exact path={"/" + item}>
+                                <Body Opportunities={this.Opportunities} activePage={item} />
+                            </Route>
+                        )
+                    })}
                 </switch>
             </Router>
         );

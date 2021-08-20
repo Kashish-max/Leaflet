@@ -4,6 +4,8 @@ import { FilterData } from './jsonData/filters';
 import { eventData } from './jsonData/eventData';
 import Demo from './socialShare';
 import Calendar from './calender';
+import axios from 'axios';
+
 
 class Body extends Component {
     constructor(props) {
@@ -19,6 +21,7 @@ class Body extends Component {
             modalDisplay: "none",
             bodyOverflow: "initial",
             modalData: eventData[2],
+            backendData: eventData,
         }
     }
 
@@ -42,6 +45,14 @@ class Body extends Component {
         <div key={i}> {item.matchID} {item.timeM}{item.description}</div>
     );
 
+    componentDidMount() {
+        const requestBody = { type: this.props.activePage }
+        axios.post('http://localhost:8000/route2', requestBody)
+            .then(response => {
+                console.log(response.data.eventData)
+                this.setState({ backendData: response.data.eventData });
+        });
+    }
 
     render() { 
         return (
@@ -78,7 +89,7 @@ class Body extends Component {
                                 <div className="md-card-up">
                                     <div className="card-up-head">
                                         <div>
-                                            <span style={{"color": "rgb(234, 67, 53)"}}>Updated on: {this.state.modalData.posted_on} { this.state.modalData.time } IST</span>
+                                            <span style={{"color": ""}}>Updated on: {this.state.modalData.posted_on} { this.state.modalData.time } IST</span>
                                             <span style={{"color": ""}}>{this.state.modalData.payment.slice(0, this.state.modalData.payment.search(',')).toLowerCase() == "free"
                                             ? "Free Registration" : "Registration Fee: " + this.state.modalData.prize}</span>
                                             <span style={{"color": "rgb(251, 188, 5)"}}>{this.state.modalData.status.slice(0, this.state.modalData.status.search(','))}</span>
@@ -178,7 +189,7 @@ class Body extends Component {
                             </div>
                             <div className="material">
                                 <div className="material-container">
-                                    {eventData.filter(event => {
+                                    {this.state.backendData.filter(event => {
                                         let cond1 = event.status.toLowerCase().includes(this.state.status.toLowerCase());
                                         let cond2 = event.eligibility.toString().toLowerCase().includes(this.state.eligibility.toLowerCase());
                                         let cond3 = event.payment.toLowerCase().includes(this.state.payment.toLowerCase());

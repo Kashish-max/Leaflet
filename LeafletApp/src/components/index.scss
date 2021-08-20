@@ -166,11 +166,17 @@
   border-bottom: 1px solid var(--text-border);
   width: 100%;
 
+  a {
+    text-decoration: none;
+    color: var(--text-P);
+
+    &:hover {
+      color: var(--Leaf-button);
+    }
+  }
   li {
     cursor: pointer;
     margin-right: 30px;
-    color: var(--text-P);
-    transition: .4s;
     display: flex;
     align-items: center;
   }

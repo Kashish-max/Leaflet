@@ -11,6 +11,10 @@ app.use(bodyParser.json());
 
 const mongooseconfig = require('./mongooseconfig.js');
 
+const cors = require('cors');
+app.use(cors({
+    origin: '*'
+}));
 
 app.post('/route1', (req, res) => {
     eventModel.createEvent(req.body).then((result)=>{
